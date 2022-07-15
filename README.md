@@ -1,12 +1,7 @@
-# Buildroot Package for Allwinner SIPs
-Opensource development package for Allwinner F1C100s & F1C200s
+# Buildroot Package for LimePi Zero
+Opensource development package for LimePi Zero
 
-## Driver support
-Check this file to view current driver support progress for F1C100s/F1C200s: [PROGRESS-SUNIV.md](PROGRESS-SUNIV.md)
 
-Check this file to view current driver support progress for V3/V3s/S3/S3L: [PROGRESS-V3.md](PROGRESS-V3.md)
-
-## Install
 
 ### Install necessary packages
 ``` shell
@@ -17,7 +12,7 @@ sudo apt install python3-distutils
 ### Download BSP
 **Notice: Root permission is not necessery for download or extract.**
 ```shell
-git clone https://github.com/aodzip/buildroot-tiny200
+git clone https://github.com/TraxBee/buildroot-lime-pi.git
 ```
 
 ## Make the first build
@@ -28,8 +23,8 @@ git clone https://github.com/aodzip/buildroot-tiny200
 
 **Generally, you only need to apply it once.**
 ```shell
-cd buildroot-tiny200
-make widora_mangopi_r3_defconfig
+cd buildroot-lime-pi
+make traxbee_limepi_r1_defconfig
 ```
 
 ### Regular build
